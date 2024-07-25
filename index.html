@@ -3,7 +3,7 @@
 <head>
         
    
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
 
@@ -24,12 +24,16 @@
     <link rel="stylesheet" href="fonts/icons-fontawesome/css/all.min.css">
     <link rel="stylesheet" href="fonts/icons-linear.css">
     <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/jquery.timepicker.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-responsive.css" rel="stylesheet" type="text/css" />
    
     
 	
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
     <script src="owl-slider/owl.carousel.js"></script>
     <script src="js/scripts.js"></script>
     <script>
@@ -128,8 +132,7 @@
 	        <!-- video background -->
 
 		</div>
-		<!--bannercontent-->	
-
+		<!--bannercontent-->
 
 		<div class="formwrap">
 			<div class="container">
@@ -138,13 +141,13 @@
 					<h4>
 						Para solicitar información llene el siguiente formulario y envíenos los detalles.
 					</h4>
-					<form id="contactform" method="post" action="contactform/contactform.php">
+					<form id="contactform" method="POST" action="contactform/contactform.php">
 
 						<label>
 							<input type="text" name="name" placeholder="Name*" required>
 						</label>
 						<label class="alignright">
-							<input type="text" name="email" placeholder="Email*" required>
+							<input type="email" name="email" placeholder="Email*" required>
 						</label>
 						<label class="full">
 							<input type="text" name="phone" placeholder="Phone*" required>
@@ -152,32 +155,34 @@
 						<label class="full">
 							<input type="date" name="date" placeholder="Select Date" id="datepicker" class="" required>
 						</label>
+						<label class="full">
+							<input type="text" name="hora" placeholder="Hora*" id="timepicker" required>
+						</label>	
+						<select class="full" name="selec" id="selec" >
+						  <option value="Presencial">Presencial</option>
+						  <option value="Virtual">Virtual</option>
+						</select>
 						<button type="submit" name="submit" id="contactform_btn">Enviar solicitud</button>
 						<div class="responsetype"></div>
 					</form>
 				</div>
 			</div>
 		</div>
-			
 
-
-		
-
-
-		<div class="dental-cert-wrap">
+		<div class="psic-cert-wrap">
 			<div class="container">
 
-				<div class="dental-cert">
-					<img src="images/d-logo-1.png" alt="" />
+				<div class="psic-cert">
+					<!--img src="images/d-logo-1.png" alt="" />
 					<img src="images/d-logo-2.png" alt="" />
 					<img src="images/d-logo-3.png" alt="" />
 					<img src="images/d-logo-4.png" alt="" />
-					<img src="images/d-logo-5.png" alt="" />
+					<img src="images/d-logo-5.png" alt="" /-->
 				</div>
 				
 			</div>
 		</div>
-		<!--dental-logos-->
+		<!--psic-logos-->
 		
 
 	</div>
@@ -188,7 +193,7 @@
 
 
 
-	<div class="dental_services" id="services">
+	<div class="psic_services" id="services">
 		<div class="container">
 
 
@@ -266,7 +271,7 @@
 
 		</div>
 	</div>
-	<!--dental_services-->
+	<!--psic_services-->
 
 
 
